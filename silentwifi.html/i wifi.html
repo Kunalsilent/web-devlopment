@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>wifi login</title>
+  <link rel="stylesheet" href="wifi.css">
+</head>
+
+<body>
+<div id="content">
+	<div class="login-card">
+		<img src="logo.jpg"/><br>
+ 		<h1></h1>
+		<div id="error-message">
+			
+		</div>
+	  <form name="login_form" method="post" action="http://192.168.1.4:8002/index.php?zone=local">		<input type="text" name="auth_user" placeholder="User" id="auth_user">
+		<input type="password" name="auth_pass" placeholder="Password" id="auth_pass">				<br  /><br  />
+				<input name="auth_voucher" type="text" placeholder="Voucher Code">
+		<input name="redirurl" type="hidden" value="https://www.google.co.in">
+		<input type="submit" name="accept" class="login login-submit" value="Login" id="login" >
+	  </form>
+	  <br  />
+	  <span> <i>love by &hearts; by</i> <strong>silent</strong></span>
+	</div>
+	<div id="terms">
+		<textarea readonly></textarea>
+	</div>
+</div>
+</body>
+</html>
