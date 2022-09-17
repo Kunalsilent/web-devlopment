@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .contner {
+            height: 300px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* flex property for contaner 
+            flex-direction: column;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: column-reverse wrap;   for both property in one command  us flow  */
+            /* justify-content: space-around;
+            justify-content: center;
+            justify-content: end;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: stretch;  */
+        }
+
+        .item {
+            background-color: pink;
+            padding: 15px 5px;
+            margin: 10px;
+            width: 15%;
+            height: 100px;
+            border: 3px solid black;
+        }
+
+        #item-1{
+              /* order: 3;  positon change according to order greater order last postion */
+        }
+
+        #item-2{
+            order: 4;
+            flex-shrink:1 ;
+            flex-basis: 133px;   /*  control widht when set to row and heoight when set to colomn */
+        }
+
+        #item-3{
+            flex-grow: 1;
+            flex-shrink: 4;
+            flex: 2 2 230px;
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: flex center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flexbox</h1>
+    <div class="contner">
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <div class="item" id="item-4">fourth box</div>
+    </div>
+</body>
+
+</html>

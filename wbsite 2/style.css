@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --navbar-height: 58px;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+ #navbar ul{
+    position: relative;
+    top: -14px;
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .89;
+    z-index: -1;
+
+
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+
+}
+
+#logo img {
+    margin: 1px 1px;
+    height: 70pxpx;
+    width: 70px;
+}
+/* home sectiom */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 633px;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+   
+    
+}
+#home::before{
+    content: "";
+    background: url('veg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 200;
+    top: -87px;
+    padding: 2px 4px;
+    
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 6.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#home p{
+    font-size: 2.5rem;
+
+
+}
+.primary{
+    font-size: 3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px ;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(77, 2, 2);
+    margin: 17px 17px ;
+    border-radius: 22px;
+    cursor: pointer;
+}
+.box{
+    margin: 34px;
+    display: flex;
+    border: 2px solid red;
+
+
+}
+.hprimary{
+    position: absolute;
+    left: 760px;
+    font-size: 2rem;
+    top: 638px;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services{
+
+}
+.centre{
+    text-align: center;
+
+}
+.hsecondary{
+    font-size: 3.8rem;
+    padding: 12px;
+
+}

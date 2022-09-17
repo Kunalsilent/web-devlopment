@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size in css</title>
+    <style>
+        .html{
+            font-size: 4px;
+        }
+        .contaner{
+            text-align: center;
+            font-size: 10px;
+            border: 2px solid black;
+            height: 100vh;  /*ke full height of conatner  vh-- view height*/
+            width: 100vw;  /*  ke full width of conatner  vh-- view width*/
+        }
+        #second{
+            font-size: 1em; /*  em means uske paerent ki size se multiply */
+            padding: 3em;     /* padding or margin uske font size se multiply hogi px m*/
+        }
+        #third{
+            font-size: 2rem;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="contaner">
+        <h1 id="first">this is 1</h1>
+        <h1 id="second">this is 2</h1>
+        <h1 id="third">this is 3</h1>
+    </div>
+</body>
+</html>

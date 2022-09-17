@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes and n th child pseudo selectors
+    </title>
+    <style>
+        .contaner{
+            display: block;
+            width: 233px;
+            margin: auto;
+            
+        }
+        input{
+            display: block
+        }
+         input[type='text']{       /*for select any special use this for editing */
+            border: 2px solid black;
+        }
+        a[target]{
+            color: pink;  font-size: 20px;    
+          }
+          a[target=_self]{
+            font-family: 56px;
+          }
+         li:nth-child(3){
+            color:fuchsia;
+         }
+         li:nth-child(2n+0){
+            border: 2px solid black;
+         }
+         li:nth-child(odd){
+            font-size: 55px;
+         }
+            
+
+    </style>
+</head>
+<body>
+    <div class="contaner">
+        <h1><a href="https://google.com" target="_blank">go to google</a></h1> <h1><a href="https://facebook.com" target="_self">go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="name"><input type="password" placeholder="password"><input type="text" placeholder="age"><input type="submit" placeholder="submit">
+           
+        </form>
+        <ul>
+    <li class="item" id="item-1">item 1</li>
+    <li class="item" id="item-1">item 2</li>
+    <li class="item" id="item-1">item 3</li>
+    <li class="item" id="item-1">item 4</li>
+</ul>
+</div>
+   
+</body>
+</html>
