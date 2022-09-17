@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display grid</title>
+    <style>
+        .contaner{
+            display: grid;
+            /* grid-template-columns: 100px 200px 100px  ;   take this in ratio or make grid  */
+            /* grid-template-columns: 2fr 4fr 3fr ;  take this also into ratio of grid in coloum wise  */
+            grid-template-columns: repeat(10,auto);   /*how much time need to divide use this  */
+            grid-gap: 1rem;
+        }
+         .item{
+            /* height: 100px;
+            width: 100px; */
+            background-color: gold;
+            margin: 2px;
+            padding:  15px 5px;
+            height: 30vh;
+
+         }
+
+    </style>
+</head>
+<body>
+    <div class="contaner">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item -7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+        <div class="item">this is item-10</div>
+    </div>
+</body>
+</html>
