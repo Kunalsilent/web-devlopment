@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .contaner {
+            display: grid;
+            grid-gap:1rem ;
+            grid-template-areas: 
+            'navbar navbar navbar navbar '
+            'section section section aside'
+            'footer footer footer footer';
+
+        }
+
+        .item {
+
+            background-color: yellow;
+            border: 3px solid black;
+        }
+        #navbar{
+grid-area: navbar;
+        }
+        #section{
+grid-area: section;
+
+        }
+        #aside{
+grid-area: aside;
+        }
+        #footer{
+grid-area: footer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contaner">
+        <div id="navbar" class="item">
+            home aboutus contact address
+
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore esse labore quo. Saepe officiis aut explicabo debitis sunt ex dicta ab consequuntur dolores, minima doloribus magni quisquam unde molestias incidunt delectus cum temporibus. Incidunt sunt voluptatem culpa animi expedita labore et, molestiae adipisci officia ratione amet dignissimos maiores sed consectetur suscipit nam porro voluptatum possimus obcaecati ut voluptatibus? Et deleniti quisquam repellendus ipsa praesentium optio voluptatem harum soluta totam nulla necessitatibus unde excepturi, cupiditate enim impedit ex voluptate libero aliquam architecto id aut voluptas! Blanditiis, nesciunt eius! Molestiae sit perspiciatis fugiat, aperiam, nobis beatae eligendi, commodi ipsa aspernatur libero nostrum fuga veniam ex harum distinctio dolores excepturi temporibus quod eaque optio vero doloribus! Reiciendis omnis magni cumque eligendi dolor, necessitatibus nulla enim eos assumenda! Odit asperiores voluptatem assumenda expedita, fugit reprehenderit accusantium, sed minus repellendus molestiae nulla obcaecati ut. Velit sed ex reprehenderit eius magni! Provident temporibus asperiores molestias magni aliquam, culpa sit, nemo libero, consequatur accusantium ad dolore dolorem laboriosam dolores quo! Modi, accusantium quae nihil ipsa harum velit libero eum consequatur est quam, ipsam doloremque laborum facilis eaque a atque facere quaerat tempora perspiciatis quos omnis reprehenderit. Eum unde cumque accusamus aliquid enim odit? Incidunt nulla voluptatum quibusdam, quod eveniet enim. Laudantium illum sint, porro nobis adipisci vel. Animi aliquid architecto alias tenetur voluptatum cum incidunt modi, ducimus quasi ea optio maxime! Atque repellat modi perferendis ullam veniam officia? Culpa, expedita.
+
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo exercitationem expedita dolore cumque animi iste, nesciunt ipsum reiciendis ratione quos minus rerum a, beatae vel, architecto veritatis incidunt aliquam. Doloribus ab, quaerat commodi vitae nemo expedita nam alias enim velit quas nulla consequuntur doloremque. Repellendus iste consectetur quia at dolore laborum. Mollitia, ab ratione.
+
+        </div>
+        <div id ="footer" class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, minus.
+
+        </div>
+        <!-- <div class="itme">item-1</div>
+        <div class="itme">item-2</div>
+        <div class="itme">item-3</div>
+        <div class="itme">item-4</div>
+        <div class="itme">item-5</div>
+        <div class="itme">item-6</div>
+        <div class="itme">item-7</div>
+        <div class="itme">item-8</div>
+        <div class="itme">item-9</div>
+        <div class="itme">item-10</div> -->
+
+    </div>
+
+</body>
+
+</html>
